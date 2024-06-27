@@ -1,0 +1,35 @@
+# Dados de treino
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/train_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/exp1_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/train_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/train_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/exp2_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/train_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/train_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/exp3_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/train_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/train_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/exp4_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/train_activ_maps
+
+
+# Dados de validação
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/val_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/exp1_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/val_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/val_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/exp2_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/val_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/val_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/exp3_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/val_activ_maps
+
+iftSalienceMaps /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/val_flim_model/activation2 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/exp4_salie_weights.txt 4 /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/val_activ_maps
+
+
+--------------
+# Conversão para bias nos dados de treino. Não é necessário fazer para os dados de validação pois ele não é usado para criar o modelo U-Net
+
+iftFLIM-ConvertModel2Bias /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/arch_exp1.json /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/train_flim_model /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_1/train_flim_model 3
+
+iftFLIM-ConvertModel2Bias /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/arch_exp2.json /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/train_flim_model /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_2/train_flim_model 3
+
+iftFLIM-ConvertModel2Bias /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/arch_exp3.json /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/train_flim_model /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_3/train_flim_model 3
+
+iftFLIM-ConvertModel2Bias /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/arch_exp4.json /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/train_flim_model /home/arthur/Downloads/Trabalho_2/Experiments/Experiment_4/train_flim_model 3
+
+
+
